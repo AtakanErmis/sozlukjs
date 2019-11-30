@@ -4,5 +4,5 @@ const b = browserify();
 
 const file = fs.createWriteStream("./bundle.js");
 
-b.require("./index.js", {expose: "sozluk"})
+b.require("./index.js", {expose: "sozlukjs"})
 b.bundle().pipe(file);

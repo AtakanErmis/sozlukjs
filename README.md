@@ -17,7 +17,7 @@ An API library for Turkish Dictionary websites.
 # Example
 
 ```javascript
-const sozluk = require("sozluk");
+const sozluk = require("sozlukjs");
 
 sozluk.TDKDictionary.getMeaningData("sözlük")
     .then(data => console.log(data)); // console.logs the results of "sözlük" as JSON.
