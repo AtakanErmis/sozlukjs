@@ -15,3 +15,10 @@ jobs:
       run: npm run build
     - name: Publish to npm
       uses: pascalgn/npm-publish-action@1.1.0
+      with:
+        tag_name: "v%s"
+        tag_message: "v%s"
+        commit_pattern: "^Release (\\S+)"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
