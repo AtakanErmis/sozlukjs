@@ -14,8 +14,9 @@ jobs:
     - name: Browserify
       run: npm run build
     - name: Publish to npm
-      run: npm i -g npm-cli-login
-          | npm-cli-login -u atakanermis -p $NPM_AUTH_TOKEN -e ataerms@gmail.com
-          | npm publish
+      run: |
+        npm i -g npm-cli-login
+        npm-cli-login -u atakanermis -p $NPM_AUTH_TOKEN -e ataerms@gmail.com
+        npm publish
       env:
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
