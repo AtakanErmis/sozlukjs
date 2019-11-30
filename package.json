@@ -1,7 +1,7 @@
 {
-  "name": "sozluk",
+  "name": "sozlukjs",
   "version": "1.0.0",
-  "description": "an API library for Turkish Dictionary websites",
+  "description": "An API library for Turkish Dictionary websites.",
   "main": "index.js",
   "scripts": {
     "build": "node browserify-build.js"
