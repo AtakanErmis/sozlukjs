@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Test if everything is ok
-      run: npm test
+      uses: stefanoeb/jest-action@1.0.0
     - name: Browserify
       run: npm run build
     - name: Publish to npm
