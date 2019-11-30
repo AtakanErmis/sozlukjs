@@ -4,13 +4,15 @@ An API library for Turkish Dictionary websites.
 
 # Installation
 
+
 ## Through npm
 
-- `npm install --save sozluk`
+- `npm install --save sozlukjs`
 
 ## Using CDN
 
-- `<script src="https://cdn.jsdelivr.net/npm/sozluk@1.0.0/bundle.js"></script>`
+- `<script src="https://cdn.jsdelivr.net/npm/sozlukjs@1.0.0/bundle.js"></script>`
+
 
 # Example
 
@@ -23,7 +25,9 @@ sozluk.TDKDictionary.getMeaningData("sözlük")
 
 You can find more examples in the `examples` folder.
 
+
 # API
+
 
 ## `TDKDictionary`
 
