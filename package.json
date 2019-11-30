@@ -4,7 +4,8 @@
   "description": "An API library for Turkish Dictionary websites.",
   "main": "index.js",
   "scripts": {
-    "build": "node browserify-build.js"
+    "build": "node browserify-build.js",
+    "test": "jest"
   },
   "keywords": [
     "sozluk",
@@ -23,5 +24,8 @@
   "dependencies": {
     "browserify": "^16.5.0",
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
   }
 }
