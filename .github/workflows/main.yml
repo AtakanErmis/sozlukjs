@@ -18,8 +18,6 @@ jobs:
     - name: Browserify
       run: npm run build
     - name: Publish to npm
-      run: |
-        yarn install
-        npm publish --access public
+      run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
