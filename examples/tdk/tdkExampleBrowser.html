@@ -1,0 +1,17 @@
+<html>
+<body>
+    <script src="../../bundle.js"></script>
+    <script>
+        const sozluk = require("sozluk"); // You must import sozluk.js
+
+        sozluk.TDKDictionary.getMeaningData("sözlük")
+            .then(data => console.log(data)) // Fetches and console.logs the meaning of the word "sözlük".
+
+        sozluk.TDKDictionary.getSpellingData("sözlük")
+            .then(data => console.log(data)) // Fetches and console.logs the spelling of the word "sözlük".
+
+        sozluk.TDKDictionary.getAudioUrl("sözlük")
+            .then(data => console.log(data)) // Fetches and console.logs the pronounciation audio URL of the word "sözlük".
+    </script>
+</body>
+</html>
