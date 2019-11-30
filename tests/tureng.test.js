@@ -1,9 +1,13 @@
 const TurengDictionary = require("../src/modules/tureng");
 
 test("gets term JSON data successfully", () => {
-    expect(TurengDictionary.getTermData("dictionary")).resolves.toBeInstanceOf(Object);
+    TurengDictionary.getTermData("dictionary").then(data => {
+		expect(data).toBeInstanceOf(Object);
+	});
 })
 
 test("gets suggestion JSON data successfully", async () => {
-    expect(TurengDictionary.getTermSuggestions("dictionary")).resolves.toBeInstanceOf(Object);
+    TurengDictionary.getTermSuggestions("dictionary").then(data => {
+		expect(data).toBeInstanceOf(Object);
+	});
 })
