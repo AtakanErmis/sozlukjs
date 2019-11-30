@@ -351,7 +351,7 @@ class TDKDictionary {
 		return meaningData;
 	}
 	static async getSpellingData(query) {
-        const spellingData = await this.makeRequest("yazim", query);
+		const spellingData = await this.makeRequest("yazim", query);
 		return spellingData;
 	}
 	static async getAudioUrl(query) {
@@ -360,7 +360,9 @@ class TDKDictionary {
 	}
 	static async makeRequest(dataType, query) {
 		if (dataType !== "audio") {
-            const queryURL = encodeURI(`https://sozluk.gov.tr/${dataType}?ara=${query}`);
+			const queryURL = encodeURI(
+				`https://sozluk.gov.tr/${dataType}?ara=${query}`
+			);
 			const request = await fetch(queryURL);
 			const data = await request.json();
 			return data;
@@ -381,41 +383,41 @@ module.exports = TDKDictionary;
 
 },{"node-fetch":5}],7:[function(require,module,exports){
 const fetch = require("node-fetch");
-const md5 = require('md5');
+const md5 = require("md5");
 
 class TurengDictionary {
-    static async getTermSuggestions(query) {
-        const request = await fetch(`http://ac.tureng.co/?t=${query}`);
-        const data = await request.json();
-        return data;
-    }
+	static async getTermSuggestions(query) {
+		const request = await fetch(`http://ac.tureng.co/?t=${query}`);
+		const data = await request.json();
+		return data;
+	}
 	static async getTermData(term) {
 		const wordData = await this.makeRequest(term);
 		return wordData;
-    }
-    static async createMD5Hash(term) {
-        return md5(term + "46E59BAC-E593-4F4F-A4DB-960857086F9C");
-    }
+	}
 	static async makeRequest(term) {
-        const requestData = {
-            "Term": term,
-            "Code": this.createMD5Hash(term)
-        }
-		const request = await fetch("http://cors-passer.herokuapp.com/http://ws.tureng.com/TurengSearchServiceV4.svc/Search", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(requestData)
-        });
-        const data = await request.json();
-        return data;
+		const requestData = {
+			Term: term
+		};
+		const request = await fetch(
+			"http://cors-passer.herokuapp.com/http://ws.tureng.com/TurengSearchServiceV4.svc/Search",
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+					Origin: "tureng.com"
+				},
+				body: JSON.stringify(requestData)
+			}
+		);
+		const data = await request.json();
+		return data;
 	}
 }
 
 module.exports = TurengDictionary;
 
-},{"md5":4,"node-fetch":5}],"sozluk":[function(require,module,exports){
+},{"md5":4,"node-fetch":5}],"sozlukjs":[function(require,module,exports){
 const TDKDictionary = require("./src/modules/tdk.js");
 const TurengDictionary = require("./src/modules/tureng.js");
 

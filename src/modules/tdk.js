@@ -6,7 +6,7 @@ class TDKDictionary {
 		return meaningData;
 	}
 	static async getSpellingData(query) {
-        const spellingData = await this.makeRequest("yazim", query);
+		const spellingData = await this.makeRequest("yazim", query);
 		return spellingData;
 	}
 	static async getAudioUrl(query) {
@@ -15,7 +15,9 @@ class TDKDictionary {
 	}
 	static async makeRequest(dataType, query) {
 		if (dataType !== "audio") {
-            const queryURL = encodeURI(`https://sozluk.gov.tr/${dataType}?ara=${query}`);
+			const queryURL = encodeURI(
+				`https://sozluk.gov.tr/${dataType}?ara=${query}`
+			);
 			const request = await fetch(queryURL);
 			const data = await request.json();
 			return data;
