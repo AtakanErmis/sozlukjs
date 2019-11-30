@@ -13,8 +13,10 @@ jobs:
       with:
         node-version: 12
         registry-url: https://registry.npmjs.org/
+    - name: npm install
+      run: npm install
     - name: Test if everything is ok
-      uses: stefanoeb/jest-action@1.0.0
+      run: npm run test
     - name: Browserify
       run: npm run build
     - name: Publish to npm
