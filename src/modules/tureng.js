@@ -1,5 +1,4 @@
 const fetch = require("node-fetch");
-const md5 = require("md5");
 
 class TurengDictionary {
 	static async getTermSuggestions(query) {
