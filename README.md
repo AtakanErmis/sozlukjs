@@ -11,7 +11,7 @@ An API library for Turkish Dictionary websites.
 
 ## Using CDN
 
-- `<script src="https://cdn.jsdelivr.net/npm/sozlukjs@1.0.0/bundle.js"></script>`
+- `<script src="https://cdn.jsdelivr.net/npm/sozlukjs@latest/bundle.js"></script>`
 
 
 # Example
