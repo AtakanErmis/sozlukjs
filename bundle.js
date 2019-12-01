@@ -53,7 +53,7 @@ class TDKDictionary {
 			const audioURLData = data.map(e => {
 				return {
 					word: e.sozu,
-					url: `https://sozluk.gov.tr/${e.seskod}.wav`
+					url: `https://sozluk.gov.tr/ses/${e.seskod}.wav`
 				};
 			});
 			return audioURLData;
