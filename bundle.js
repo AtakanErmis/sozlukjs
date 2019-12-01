@@ -105,4 +105,4 @@ const TurengDictionary = require("./src/modules/tureng.js");
 const sozluk = {TDKDictionary, TurengDictionary}
 
 module.exports = sozluk;
-},{"./src/modules/tdk.js":2,"./src/modules/tureng.js":3}]},{},[]);
+},{"./src/modules/tdk.js":2,"./src/modules/tureng.js":3}]},{},["sozlukjs"]);
