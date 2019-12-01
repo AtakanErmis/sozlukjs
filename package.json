@@ -1,6 +1,6 @@
 {
   "name": "sozlukjs",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "An API library for Turkish Dictionary websites.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
   "author": "Atakan Ermiş",
   "license": "MIT",
   "repository": {
-    "git": "https://github.com/AtakanErmis/sozlukjs.git"
+    "type": "git",
+    "url": "https://github.com/AtakanErmis/sozlukjs.git"
   },
   "pre-commit": ["build"],
   "dependencies": {

@@ -35,22 +35,22 @@ You can find more examples in the `examples` folder.
 
 - `TDKDictionary.getMeaningData(query)` *query: `String`* -> *`Promise`*
 
-Fetches the meaning of given `query` string.
+Fetches and returns JSON meaning data of given `query` string.
 
 - `TDKDictionary.getSpellingData(query)` *query: `String`* -> *`Promise`*
 
-Fetches the spelling data of given `query` string.
+Fetches and returns JSON spelling data of given `query` string.
 
 - `TDKDictionary.getAudioUrl(query)` *query: `String`* -> *`Promise`*
 
-Fetches the URL for pronounciation audio of given `query` string.
+Fetches and returns URL for pronounciation audios of given `query` string.
 
 ## `TurengDictionary`
 
 - `TurengDictionary.getTermSuggestions(query)` *query: `String`* -> *`Promise`*
 
-Fetches suggestion results of given `query` string. 
+Fetches and returns JSON suggestion results of given `query` string. 
 
 - `TurengDictionary.getTermData(term)` *term: `String`* -> *`Promise`*
 
-Fetches the meaning of given `term` string in Turkish.
+Fetches and returns JSON data of given `term` string.

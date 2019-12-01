@@ -20,7 +20,7 @@ class TurengDictionary {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
-					Origin: "tureng.com"
+					"Origin": "tureng.com"
 				},
 				body: JSON.stringify(requestData)
 			}
