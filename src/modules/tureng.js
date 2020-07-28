@@ -15,7 +15,7 @@ class TurengDictionary {
 			Term: term
 		};
 		const request = await fetch(
-			"http://cors-passer.herokuapp.com/http://ws.tureng.com/TurengSearchServiceV4.svc/Search",
+			"http://ws.tureng.com/TurengSearchServiceV4.svc/Search",
 			{
 				method: "POST",
 				headers: {
