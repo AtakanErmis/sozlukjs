@@ -1,6 +1,6 @@
 {
   "name": "sozlukjs",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "An API library for Turkish Dictionary websites.",
   "main": "index.js",
   "scripts": {
@@ -23,10 +23,10 @@
     "url": "https://github.com/AtakanErmis/sozlukjs.git"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "browserify": "^16.5.0",
-    "jest": "^24.9.0"
+    "browserify": "^17.0.0",
+    "jest": "^27.0.6"
   }
 }
