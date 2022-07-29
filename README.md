@@ -2,14 +2,15 @@
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AtakanErmis/sozlukjs/CI) ![GitHub](https://img.shields.io/github/license/AtakanErmis/sozlukjs) ![npm](https://img.shields.io/npm/v/sozlukjs) ![David](https://img.shields.io/david/AtakanErmis/sozlukjs) ![npm bundle size](https://img.shields.io/bundlephobia/min/sozlukjs) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/sozlukjs)
 
-An API library for Turkish Dictionary websites.
-
+An API library for Turkish Dictionary websites. It is alse TypeScript Supported
 # Installation
 
 
 ## Through npm
 
 - `npm install --save sozlukjs`
+OR
+- `yarn add sozlukjs`
 
 ## Using CDN
 
