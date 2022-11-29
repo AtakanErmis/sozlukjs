@@ -1,4 +1,6 @@
-# Sözlük.JS
+# Sözlük.JS 
+
+⚠️**DEPRECATED:** This project is no longer maintained. Please consider using alternatives or writing your own implementation. You can also fork and modify this repository for any personal or commercial use. 
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AtakanErmis/sozlukjs/CI) ![GitHub](https://img.shields.io/github/license/AtakanErmis/sozlukjs) ![npm](https://img.shields.io/npm/v/sozlukjs) ![David](https://img.shields.io/david/AtakanErmis/sozlukjs) ![npm bundle size](https://img.shields.io/bundlephobia/min/sozlukjs) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/sozlukjs)
 
